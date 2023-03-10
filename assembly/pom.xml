@@ -17,12 +17,14 @@
     <description>The Karaf Assembly of the polyglot persistence OSGi prototype.</description>
 
     <dependencies>
+        <!-- Karaf Archive (KAR): Framework -->
         <dependency>
             <groupId>org.apache.karaf.features</groupId>
             <artifactId>framework</artifactId>
             <type>kar</type>
         </dependency>
 
+        <!-- Karaf Feature: Standard -->
         <dependency>
             <groupId>org.apache.karaf.features</groupId>
             <artifactId>standard</artifactId>
