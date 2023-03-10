@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>de.iprotex.polyglotpersistence</groupId>
+        <artifactId>de.iprotex.polyglotpersistence.parentPom</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <groupId>de.iprotex.polyglotpersistence.features</groupId>
+    <artifactId>de.iprotex.polyglotpersistence.features.parentPom</artifactId>
+    <packaging>pom</packaging>
+
+    <name>Polyglot Persistence OSGi - Karaf Features - Parent POM</name>
+    <description>The parent POM of the Karaf Features of the polyglot persistence OSGi prototype.</description>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.karaf.tooling</groupId>
+                <artifactId>karaf-maven-plugin</artifactId>
+                <configuration>
+                    <enableGeneration>true</enableGeneration>
+                    <includeTransitiveDependency>false</includeTransitiveDependency>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
