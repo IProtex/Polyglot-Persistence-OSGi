@@ -1,7 +1,6 @@
 package de.iprotex.polyglotpersistence.api.customers;
 
 import de.iprotex.polyglotpersistence.api.datamodels.entity.RelationalEntity;
-import de.iprotex.polyglotpersistence.api.exceptions.NotUniqueException;
 import de.iprotex.polyglotpersistence.api.identifiers.StringUniqueId;
 
 import java.time.LocalDate;
@@ -19,7 +18,7 @@ public final class Customer extends RelationalEntity {
 
     private String phoneNumber;
 
-    public Customer(String email, String firstName, String lastName, LocalDate dateOfBirth, String phoneNumber) throws NotUniqueException {
+    public Customer(String email, String firstName, String lastName, LocalDate dateOfBirth, String phoneNumber) {
         super(new StringUniqueId(email));
         this.firstName = firstName;
         this.lastName = lastName;
